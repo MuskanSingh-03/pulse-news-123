@@ -34,8 +34,8 @@ The application is engineered with a strict decoupled micro-architecture consist
 
 ## 🚀 Live Deployments
 
-*   **Production Frontend UI App (Vercel / Netlify):** `https://your-frontend-link.vercel.app`[cite: 1]
-*   **Production API Routing Gateway (Railway / Render):** `https://your-backend-link.railway.app`[cite: 1]
+*   **Production Frontend UI App (Vercel / Netlify):** `https://pulse-news-123.vercel.app/`[cite: 1]
+*   **Production API Routing Gateway (Railway / Render):** `https://pulse-news-123-1.onrender.com`[cite: 1]
 
 ---
 
@@ -95,7 +95,7 @@ PORT=5000
 /frontend Configuration Layout (.env.local)
 [cite: 1]
 Code snippet
-NEXT_PUBLIC_API_URL=[https://your-backend-link.railway.app](https://your-backend-link.railway.app)
+NEXT_PUBLIC_API_URL=[https://pulse-news-123-1.onrender.com](https://pulse-news-123-1.onrender.com)
 📦 Step-By-Step Local Installation Guide
 
 1. Initialize Pipeline Utilities & Run Local Scrape
@@ -116,5 +116,3 @@ cd ../frontend
 npm install
 npm run dev
 
-🎥 Production Video Walkthrough
-Required Presentation Submission: [Insert your unlisted Loom / OBS Walkthrough Recording Link Here][cite: 1]
