@@ -36,7 +36,7 @@ export default function Home() {
   const fetchClusters = async () => {
     setIsRefreshing(true);
     try {
-      const res = await fetch("http://localhost:5000/api/clusters");
+      const res = await fetch("https://pulse-news-123-1.onrender.com/api/clusters");
       if (!res.ok) throw new Error("Server response not ok");
       const data = await res.json();
       setClusters(data);
