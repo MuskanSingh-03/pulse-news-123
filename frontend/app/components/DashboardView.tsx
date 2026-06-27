@@ -79,7 +79,9 @@ export default function DashboardView({ clusters, onSelectCluster }: DashboardPr
               key={cluster.id}
               onClick={async () => {
                 try {
-                  const res = await fetch(`http://localhost:5000/api/clusters/${cluster.id}`);
+                  // Change your line to look like this:
+                  const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+                  const res = await fetch(`${apiUrl}/api/clusters/${cluster.id}`);
                   const articles = await res.json();
                   onSelectCluster({ ...cluster, articles });
                 } catch (err) {
